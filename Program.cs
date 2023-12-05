@@ -51,6 +51,16 @@ using (var db = new UserContext())
 #elif INSERT
 using(var db = new UserContext())
 {
+    string[] opts = {"Crea", "Modifica", "Elimina"};
+    switch (ConsoleHelper.MultipleChoice(false, opts, "Cosa Vuoi Fare?")){
+        case 0:
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+    }
+
     Console.WriteLine("Che Nickname vuoi rimuovere?");
     var nick = Console.ReadLine()!;
     
