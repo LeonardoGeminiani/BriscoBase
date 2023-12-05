@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BriscoBase2", "BriscoBase2.csproj", "{7375E21D-2AF3-44F5-9505-53A4D8DFDE15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BriscoBase", "BriscoBase.csproj", "{7375E21D-2AF3-44F5-9505-53A4D8DFDE15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

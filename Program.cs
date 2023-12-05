@@ -1,5 +1,8 @@
-﻿using SQLitePCL;
+﻿#define INSERT
 
+using SQLitePCL;
+
+#if CSV
 using (var db = new UserContext())
 {
     using (var reader = new StreamReader("./Clan.csv"))
@@ -45,3 +48,16 @@ using (var db = new UserContext())
 
     db.SaveChanges();
 }
+#elif INSERT
+using(var db = new UserContext())
+{
+    Console.WriteLine("Che Nickname vuoi rimuovere?");
+    var nick = Console.ReadLine()!;
+    
+    var qry = db.Users.Where(u => u.NickName.Equals(nick)).ToList();
+    if(qry.Count() > 0){
+        foreach(var user in qry) db.Remove(user);
+    }
+}
+
+#endif
