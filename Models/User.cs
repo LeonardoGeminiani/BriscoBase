@@ -14,8 +14,8 @@ public class User
     public override string ToString()
     {
         return string.Format(
-            "User:{0,-3} Nick:{1,-20} Email:{2,-30} Pw:{3,-18} SSO:{4,-10} GamePlayed:{5,-3} Points:{6,-6}",
-            UserId, NickName, Password, SSO, GamesPlayed, Points
+            "User:{0,-3} Nick:{1,-20} Pw:{2,-18} SSO:{3,-10} GamePlayed:{4,-3} Points:{5,-6} ClanId:{6,-6}",
+            UserId, NickName, Password, SSO, GamesPlayed, Points, ClanId
         );
         // return $"User:{ UserId } Nick:{ NickName } Email:{ Email } Pw:{ Password } SSO:{ SSO } GamePlayed:{ GamePlayed } Points:{ Points }";
     }
